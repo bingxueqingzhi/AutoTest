@@ -1,0 +1,17 @@
+I:\AutoTest\连接网分\导出marker数据\bin\Debug\导出marker数据.exe.config
+I:\AutoTest\连接网分\导出marker数据\bin\Debug\导出marker数据.exe
+I:\AutoTest\连接网分\导出marker数据\bin\Debug\导出marker数据.pdb
+I:\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.Form1.resources
+I:\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.Properties.Resources.resources
+I:\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.csproj.GenerateResource.Cache
+I:\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.exe
+I:\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.pdb
+D:\Code\AutoTest\连接网分\导出marker数据\bin\Debug\导出marker数据.exe.config
+D:\Code\AutoTest\连接网分\导出marker数据\bin\Debug\导出marker数据.exe
+D:\Code\AutoTest\连接网分\导出marker数据\bin\Debug\导出marker数据.pdb
+D:\Code\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.csprojResolveAssemblyReference.cache
+D:\Code\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.Form1.resources
+D:\Code\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.Properties.Resources.resources
+D:\Code\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.csproj.GenerateResource.Cache
+D:\Code\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.exe
+D:\Code\AutoTest\连接网分\导出marker数据\obj\Debug\导出marker数据.pdb

@@ -1,0 +1,10 @@
+I:\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe.config
+I:\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe
+I:\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.pdb
+I:\AutoTest\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.exe
+I:\AutoTest\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.pdb
+D:\Code\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe.config
+D:\Code\AutoTest\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.exe
+D:\Code\AutoTest\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.pdb
+D:\Code\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe
+D:\Code\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.pdb

@@ -1,0 +1,14 @@
+I:\AutoTest\连接网分\操作Excel\bin\Debug\操作Excel.exe.config
+I:\AutoTest\连接网分\操作Excel\bin\Debug\操作Excel.exe
+I:\AutoTest\连接网分\操作Excel\bin\Debug\操作Excel.pdb
+I:\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.csprojResolveAssemblyReference.cache
+I:\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.csproj.ResolveComReference.cache
+I:\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.exe
+I:\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.pdb
+D:\Code\AutoTest\连接网分\操作Excel\bin\Debug\操作Excel.exe.config
+D:\Code\AutoTest\连接网分\操作Excel\bin\Debug\操作Excel.exe
+D:\Code\AutoTest\连接网分\操作Excel\bin\Debug\操作Excel.pdb
+D:\Code\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.csprojResolveAssemblyReference.cache
+D:\Code\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.csproj.ResolveComReference.cache
+D:\Code\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.exe
+D:\Code\AutoTest\连接网分\操作Excel\obj\Debug\操作Excel.pdb

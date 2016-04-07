@@ -1,0 +1,16 @@
+E:\ProjectCode\test\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.exe
+E:\ProjectCode\test\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.pdb
+E:\ProjectCode\test\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.exe
+E:\ProjectCode\test\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
+F:\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.exe
+F:\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
+I:\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.exe
+I:\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
+I:\AutoTest\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.exe
+I:\AutoTest\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.pdb
+I:\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.csprojResolveAssemblyReference.cache
+D:\Code\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.exe
+D:\Code\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
+D:\Code\AutoTest\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.exe
+D:\Code\AutoTest\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.pdb
+D:\Code\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.csprojResolveAssemblyReference.cache
