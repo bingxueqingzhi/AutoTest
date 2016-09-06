@@ -63,9 +63,18 @@ namespace 抓一批数据
         /// <returns></returns>
         public static bool IsCompleteRawPacket(byte[] RawPacket, int Num)
         {
-            if (RawPacket[0] == 35 && RawPacket[Num - 1] == 10)
+            if (RawPacket[0] == 35)
             {
-                return true;
+                int lenOfLen = int.Parse(Encoding.ASCII.GetString(RawPacket, 1, 1));
+                int len = int.Parse(Encoding.ASCII.GetString(RawPacket, 2, lenOfLen));
+                if (Num >= len + lenOfLen + 2)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {

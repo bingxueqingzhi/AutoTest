@@ -152,7 +152,7 @@ namespace 抓一批数据
                 MessageBox.Show(err.Message);
                 return;
             }
-            //MessageBox.Show("Connected!");
+            this.Text = "R&S NWA @ " + ipadd.ToString();
             using (FolderBrowserDialog fbd = new FolderBrowserDialog())
             {
                 fbd.Description = "Please choose a work folder";
@@ -164,6 +164,7 @@ namespace 抓一批数据
                     this.btnDelMemory.Enabled = true;
                     this.btnSettingsConfirm.Enabled = true;
                     this.btnScanSettings.Enabled = true;
+                    this.btnConnect.Enabled = false;
                 }
             }
         }

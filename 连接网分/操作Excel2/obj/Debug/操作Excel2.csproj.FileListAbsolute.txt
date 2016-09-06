@@ -18,3 +18,12 @@ D:\Code\AutoTest\连接网分\操作Excel2\obj\Debug\操作Excel2.Properties.Res
 D:\Code\AutoTest\连接网分\操作Excel2\obj\Debug\操作Excel2.csproj.GenerateResource.Cache
 D:\Code\AutoTest\连接网分\操作Excel2\obj\Debug\操作Excel2.exe
 D:\Code\AutoTest\连接网分\操作Excel2\obj\Debug\操作Excel2.pdb
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\bin\Debug\操作Excel2.exe.config
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\bin\Debug\操作Excel2.exe
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\bin\Debug\操作Excel2.pdb
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\obj\Debug\操作Excel2.csproj.ResolveComReference.cache
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\obj\Debug\操作Excel2.Form1.resources
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\obj\Debug\操作Excel2.Properties.Resources.resources
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\obj\Debug\操作Excel2.csproj.GenerateResource.Cache
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\obj\Debug\操作Excel2.exe
+D:\Code\AutoTest.git\trunk\连接网分\操作Excel2\obj\Debug\操作Excel2.pdb

@@ -11,6 +11,21 @@
     <AssemblyName>抓一批数据</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>RS.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,13 +62,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\delLbl.cs" />
+    <Compile Include="Class\delMeasAmStrength.cs" />
+    <Compile Include="Class\delTbx.cs" />
+    <Compile Include="Class\MeaAmStrengthStatusObj.cs" />
     <Compile Include="Class\RsSgStatus.cs" />
     <Compile Include="ComFunction.cs" />
+    <Compile Include="Forms\fmAmSignalStrength.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fmAmSignalStrength.Designer.cs">
+      <DependentUpon>fmAmSignalStrength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fmdIM3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fmdIM3.Designer.cs">
+      <DependentUpon>fmdIM3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fmDeviceID.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\fmDeviceID.Designer.cs">
       <DependentUpon>fmDeviceID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fmP-1dB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fmP-1dB.Designer.cs">
+      <DependentUpon>fmP-1dB.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\fmScanCurrentSettings.cs">
       <SubType>Form</SubType>
@@ -64,11 +104,23 @@
     <Compile Include="Forms\fmSetRsNwa.Designer.cs">
       <DependentUpon>fmSetRsNwa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fmSetRsSa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fmSetRsSa.Designer.cs">
+      <DependentUpon>fmSetRsSa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fmSetRsSg.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\fmSetRsSg.Designer.cs">
       <DependentUpon>fmSetRsSg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fmSetRsSgOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fmSetRsSgOffset.Designer.cs">
+      <DependentUpon>fmSetRsSgOffset.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\fmSpace.cs">
       <SubType>Form</SubType>
@@ -94,8 +146,17 @@
     <Compile Include="RawDataResolver.cs" />
     <Compile Include="TcRecObj.cs" />
     <Compile Include="WuGuiBanShan.cs" />
+    <EmbeddedResource Include="Forms\fmAmSignalStrength.resx">
+      <DependentUpon>fmAmSignalStrength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fmdIM3.resx">
+      <DependentUpon>fmdIM3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fmDeviceID.resx">
       <DependentUpon>fmDeviceID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fmP-1dB.resx">
+      <DependentUpon>fmP-1dB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fmScanCurrentSettings.resx">
       <DependentUpon>fmScanCurrentSettings.cs</DependentUpon>
@@ -103,8 +164,14 @@
     <EmbeddedResource Include="Forms\fmSetRsNwa.resx">
       <DependentUpon>fmSetRsNwa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fmSetRsSa.resx">
+      <DependentUpon>fmSetRsSa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fmSetRsSg.resx">
       <DependentUpon>fmSetRsSg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fmSetRsSgOffset.resx">
+      <DependentUpon>fmSetRsSgOffset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fmSpace.resx">
       <DependentUpon>fmSpace.cs</DependentUpon>
@@ -123,6 +190,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,6 +204,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1dB_Cal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P1dB_Test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dIM3_Cal.png" />
+    <None Include="Resources\dIM3_Test.png" />
+    <Content Include="RS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

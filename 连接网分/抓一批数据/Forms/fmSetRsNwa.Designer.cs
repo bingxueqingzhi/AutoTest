@@ -163,7 +163,7 @@
             this.Controls.Add(this.lblMemName);
             this.Controls.Add(this.tbxMemName);
             this.Name = "fmSetRsNwa";
-            this.Text = "Edit Nwa";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

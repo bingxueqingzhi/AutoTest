@@ -41,6 +41,7 @@
             this.lblIP = new System.Windows.Forms.Label();
             this.tbxIP = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnOffset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblFreq
@@ -176,11 +177,23 @@
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
+            // btnOffset
+            // 
+            this.btnOffset.Enabled = false;
+            this.btnOffset.Location = new System.Drawing.Point(187, 23);
+            this.btnOffset.Name = "btnOffset";
+            this.btnOffset.Size = new System.Drawing.Size(75, 23);
+            this.btnOffset.TabIndex = 13;
+            this.btnOffset.Text = "Offset";
+            this.btnOffset.UseVisualStyleBackColor = true;
+            this.btnOffset.Click += new System.EventHandler(this.btnOffset_Click);
+            // 
             // fmSetRsSg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 169);
+            this.Controls.Add(this.btnOffset);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.tbxIP);
             this.Controls.Add(this.lblIP);
@@ -218,5 +231,6 @@
         private System.Windows.Forms.Label lblIP;
         private System.Windows.Forms.TextBox tbxIP;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnOffset;
     }
 }

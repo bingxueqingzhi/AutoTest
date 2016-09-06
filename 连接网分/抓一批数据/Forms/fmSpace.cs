@@ -33,5 +33,33 @@ namespace 抓一批数据
             sg.MdiParent = this;
             sg.Show();
         }
+
+        private void sAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmSetRsSa sa = new fmSetRsSa();
+            sa.MdiParent = this;
+            sa.Show();
+        }
+
+        private void p1dBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmP_1dB p1db = new fmP_1dB();
+            p1db.MdiParent = this;
+            p1db.Show();
+        }
+
+        private void rdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmdIM3 dim3 = new fmdIM3();
+            dim3.MdiParent = this;
+            dim3.Show();
+        }
+
+        private void amStrengthToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmAmSignalStrength ass = new fmAmSignalStrength();
+            ass.MdiParent = this;
+            ass.Show();
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.IO;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace 抓一批数据
 {
@@ -15,7 +16,8 @@ namespace 抓一批数据
         S11 = 0,
         S21 = 1,
         S12 = 2,
-        S22 = 3
+        S22 = 3,
+        KFAC21 = 4
     }
     public enum Format
     {
@@ -183,8 +185,23 @@ namespace 抓一批数据
                     for (int marN = 1; marN < 10; marN++)//逐个读取一条trace上marker点
                     {
                         byte[] b = new byte[1024];
+                        EndPoint ep = this.Tc.Client.RemoteEndPoint;
                         this.Tc.Client.Send(this.GetCmdBytes("calculate1:marker" + marN.ToString() + '?'));
-                        int n = this.Tc.Client.Receive(b, b.Length, SocketFlags.None);
+                        int n;
+                        try
+                        {
+                            n = this.Tc.Client.ReceiveFrom(b, b.Length, SocketFlags.None, ref ep);
+                            if (n == 0)
+                            {
+                                MessageBox.Show("Nothing Received.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                        }
+                        catch (Exception err)
+                        {
+                            MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
                         char markerStatus = Encoding.ASCII.GetString(b, 0, n)[0];//0=marker关闭, 1=marker打开
                         if (markerStatus == '1')
                         {
@@ -232,6 +249,10 @@ namespace 抓一批数据
             }
 
             //获取截图
+            this.Tc.Client.Send(this.GetCmdBytes("hcopy:item:all"));//截取全部元素
+            this.Tc.Client.Send(this.GetCmdBytes("hcopy:device:language BMP"));//BMP格式
+            this.Tc.Client.Send(this.GetCmdBytes("hcopy:destination \"MMEM\""));//先保存到设备硬盘上
+            this.Tc.Client.Send(this.GetCmdBytes("mmemory:name \"C:\\SS.BMP\""));//设置设备上的路径
             this.Tc.Client.Send(this.GetCmdBytes("hcopy"));//截图
             int m = 0;
             byte[] buffer2 = new byte[10 * 1024 * 1024];

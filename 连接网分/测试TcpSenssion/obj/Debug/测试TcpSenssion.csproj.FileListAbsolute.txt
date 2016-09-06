@@ -14,3 +14,10 @@ D:\Code\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
 D:\Code\AutoTest\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.exe
 D:\Code\AutoTest\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.pdb
 D:\Code\AutoTest\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.csprojResolveAssemblyReference.cache
+D:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.exe
+D:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
+E:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.exe
+E:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.pdb
+D:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.exe
+D:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\bin\Debug\测试TcpSenssion.pdb
+D:\Code\AutoTest.git\trunk\连接网分\测试TcpSenssion\obj\Debug\测试TcpSenssion.csprojResolveAssemblyReference.cache

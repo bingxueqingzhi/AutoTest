@@ -37,3 +37,12 @@ D:\Code\AutoTest\连接网分\连接信号发生器\obj\Debug\连接信号发生
 D:\Code\AutoTest\连接网分\连接信号发生器\obj\Debug\连接信号发生器.csproj.GenerateResource.Cache
 D:\Code\AutoTest\连接网分\连接信号发生器\obj\Debug\连接信号发生器.exe
 D:\Code\AutoTest\连接网分\连接信号发生器\obj\Debug\连接信号发生器.pdb
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\bin\Debug\连接信号发生器.exe.config
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\obj\Debug\连接信号发生器.exe
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\obj\Debug\连接信号发生器.pdb
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\bin\Debug\连接信号发生器.exe
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\bin\Debug\连接信号发生器.pdb
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\obj\Debug\连接信号发生器.FmCmd.resources
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\obj\Debug\连接信号发生器.FmMain.resources
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\obj\Debug\连接信号发生器.Properties.Resources.resources
+D:\Code\AutoTest.git\trunk\连接网分\连接信号发生器\obj\Debug\连接信号发生器.csproj.GenerateResource.Cache

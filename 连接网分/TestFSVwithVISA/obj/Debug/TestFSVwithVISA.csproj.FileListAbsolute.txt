@@ -1,0 +1,7 @@
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\bin\Debug\TestFSVwithVISA.exe.config
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\obj\Debug\TestFSVwithVISA.csproj.ResolveComReference.cache
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\bin\Debug\TestFSVwithVISA.exe
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\bin\Debug\TestFSVwithVISA.pdb
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\obj\Debug\TestFSVwithVISA.exe
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\obj\Debug\TestFSVwithVISA.pdb
+D:\Code\AutoTest.git\trunk\连接网分\TestFSVwithVISA\obj\Debug\TestFSVwithVISA.csprojResolveAssemblyReference.cache

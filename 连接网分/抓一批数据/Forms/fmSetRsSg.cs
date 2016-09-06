@@ -14,6 +14,12 @@ using System.Threading;
 
 namespace 抓一批数据.Forms
 {
+    public enum PowerUnit
+    {
+        dBuV = 0,
+        dBm = 1,
+        V = 2
+    }
     public partial class fmSetRsSg : Form
     {
         public fmSetRsSg()
@@ -21,6 +27,11 @@ namespace 抓一批数据.Forms
             InitializeComponent();
             this.cbxPowerUnit.SelectedIndex = 0;
             this.cbxFreqUnit.SelectedIndex = 0;
+        }
+        public fmSetRsSg(Socket S)
+            : this()
+        {
+            this.st = S;
         }
         Socket st;
         /// <summary>
@@ -48,6 +59,7 @@ namespace 抓一批数据.Forms
                     MessageBox.Show(err.Message);
                     return;
                 }
+                this.Text = "R&S SG @ " + ip.ToString();
                 //读取RF状态
                 byte[] buffer = new byte[1024 * 1024];
                 EndPoint ep = this.st.RemoteEndPoint;
@@ -65,6 +77,7 @@ namespace 抓一批数据.Forms
                 this.btnModGen.Enabled = true;
                 this.btnModulation.Enabled = true;
                 this.btnRF.Enabled = true;
+                this.btnOffset.Enabled = true;
             }
         }
 
@@ -80,7 +93,7 @@ namespace 抓一批数据.Forms
             string s1 = (int.Parse(tbxFreq.Text) * Math.Pow(1000, cbxFreqUnit.SelectedIndex + 1)).ToString();
             string s2 = Encoding.ASCII.GetString(buffer, 0, n).Substring(0, n - 1);
             //设置功率
-            this.st.Send(ComFunction.GetCmdBytes("source:power:power " + this.tbxPower.Text + this.cbxPowerUnit.SelectedItem.ToString()));
+            this.st.Send(ComFunction.GetCmdBytes("source:power " + this.tbxPower.Text + this.cbxPowerUnit.SelectedItem.ToString()));
             //设置单位
             string unit;
             switch (this.cbxPowerUnit.SelectedIndex)
@@ -96,7 +109,7 @@ namespace 抓一批数据.Forms
                     break;
             }
             this.st.Send(ComFunction.GetCmdBytes("unit:power " + unit));
-            this.st.Send(ComFunction.GetCmdBytes("source:power:power?"));
+            this.st.Send(ComFunction.GetCmdBytes("source:power?"));
             n = this.st.ReceiveFrom(buffer, buffer.Length, SocketFlags.None, ref ep);
             string p1 = tbxPower.Text;
             string p2 = Encoding.ASCII.GetString(buffer, 0, n).Substring(0, n - 1);
@@ -151,6 +164,102 @@ namespace 抓一批数据.Forms
             int n;
             this.btnSetFreqPower.Enabled = int.TryParse(this.tbxFreq.Text, out n) && int.TryParse(tbxPower.Text, out n);
         }
-
+        /// <summary>
+        /// 设置频率Offset
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnOffset_Click(object sender, EventArgs e)
+        {
+            using (fmSetRsSgOffset fmFreqOffset = new fmSetRsSgOffset(this.st))
+            {
+                fmFreqOffset.ShowDialog();
+            }
+        }
+        public void SetFreq(string freq)
+        {
+            if (this.st == null)
+            {
+                return;
+            }
+            this.st.Send(ComFunction.GetCmdBytes("source:frequency " + freq));
+        }
+        public void SetFreq(Int64 freq)
+        {
+            this.SetFreq(freq.ToString());
+        }
+        public int GetFreq()
+        {
+            byte[] buffer = new byte[1024 * 1024];
+            EndPoint ep = this.st.RemoteEndPoint;
+            this.st.Send(ComFunction.GetCmdBytes("source:frequency?"));
+            int n = this.st.ReceiveFrom(buffer, buffer.Length, SocketFlags.None, ref ep);
+            string freqStr = Encoding.ASCII.GetString(buffer, 0, n - 1);
+            return int.Parse(freqStr);
+        }
+        public void SetPower(string power, PowerUnit unit)
+        {
+            if (this.st == null)
+            {
+                return;
+            }
+            this.st.Send(ComFunction.GetCmdBytes("source:power " + power + unit.ToString()));
+        }
+        public void SetPower(double power, PowerUnit unit)
+        {
+            this.SetPower(power.ToString(), unit);
+        }
+        public double GetPower()
+        {
+            byte[] buffer = new byte[1024];
+            EndPoint ep = this.st.RemoteEndPoint;
+            this.st.Send(ComFunction.GetCmdBytes("source:power?"));
+            int n = this.st.ReceiveFrom(buffer, buffer.Length, SocketFlags.None, ref ep);
+            string powerStr = Encoding.ASCII.GetString(buffer, 0, n - 1);
+            return double.Parse(powerStr);
+        }
+        public void RfOn(bool on)
+        {
+            if (this.st == null)
+            {
+                return;
+            }
+            if (on)
+            {
+                this.st.Send(ComFunction.GetCmdBytes("output 1"));
+            }
+            else
+            {
+                this.st.Send(ComFunction.GetCmdBytes("output 0"));
+            }
+        }
+        /// <summary>
+        /// 设置PowerOffset
+        /// </summary>
+        /// <param name="offset">Offset</param>
+        /// <param name="on">是否启用Offset</param>
+        public void SetPowerOffset(double offset)
+        {
+            this.st.Send(ComFunction.GetCmdBytes("source:power:offset " + offset.ToString() + "dB"));
+            //if (on)
+            //{
+            //    this.st.Send(ComFunction.GetCmdBytes("sense:power:offset:state on"));
+            //}
+            //else
+            //{
+            //    this.st.Send(ComFunction.GetCmdBytes("sense:power:offset:state off"));
+            //}
+        }
+        public void SetPowerUnit(PowerUnit unit)
+        {
+            this.st.Send(ComFunction.GetCmdBytes("unit:power " + unit.ToString()));
+        }
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        public void Reset()
+        {
+            this.st.Send(ComFunction.GetCmdBytes("*RST"));
+        }
     }
 }

@@ -8,3 +8,8 @@ D:\Code\AutoTest\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SM
 D:\Code\AutoTest\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.pdb
 D:\Code\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe
 D:\Code\AutoTest\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.pdb
+D:\Code\AutoTest.git\trunk\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe.config
+D:\Code\AutoTest.git\trunk\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.exe
+D:\Code\AutoTest.git\trunk\连接网分\用Socket连接SMB100A\obj\Debug\用Socket连接SMB100A.pdb
+D:\Code\AutoTest.git\trunk\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.exe
+D:\Code\AutoTest.git\trunk\连接网分\用Socket连接SMB100A\bin\Debug\用Socket连接SMB100A.pdb
